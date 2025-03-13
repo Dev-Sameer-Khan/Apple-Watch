@@ -1,23 +1,17 @@
-import { Canvas } from '@react-three/fiber'
-import React, { useEffect, useRef } from 'react'
-import Scene from './Scene'
-import gsap from 'gsap'
+import React from 'react'
+import Hero from './sections/Hero'
+import Page2 from './sections/Page2'
+import Page3 from './sections/Page3'
+import Page4 from './sections/Page4'
 
 const App = () => {
-
-  // const canvas = useRef(null)
-
-  // useEffect(()=>{
-  //   gsap.from(canvas.current, {
-  //     x: "100%",
-  //     duration: 1
-  //   })    
-  // },[])
-
   return (
-      <Canvas  style={{ height: '100vh', width: '100vw', backgroundColor : 'black' }} >
-        <Scene/>
-      </Canvas>
+  <main className='overflow-hidden'>
+  <Hero/>
+  <Page2/>
+  <Page3/>
+  <Page4/>
+  </main>
   )
 }
 
